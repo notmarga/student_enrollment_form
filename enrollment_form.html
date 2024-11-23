@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Enrollment Form</title>
+    
+        <h1>Student Enrollment Form</h1>
+    
+        <h3>Instructions:</h3>
+    
+        <ol>
+            <li>Fill in the form fields.</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+    </head>
+<body class="content-container">
+    <form class="enrollment-container">
+    <div class="form-row">
+        <div class="form-column"><br>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-column"><br>
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="bsit">BSIT</option>
+                <option value="bssw">BSSW</option>
+                <option value="bspa">BSPA</option>
+                <option value="bsais">BSAIS</option>
+                <option value="btvted">BTVTED</option>
+                <option value="bsa">BSA</option>
+                <option value="dhrs">DHRS</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="form-column">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-column">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+    </div>
+
+   
+    <div class="form-row">
+        <div class="form-column">
+            <label for="interests">Interests:</label>
+            <div class="left-choices">
+                <label><input type="checkbox" id="webDev" name="interests" value="webDev"> Web Development</label>
+                <label><input type="checkbox" id="dataSci" name="interests" value="dataSci"> Data Science</label>
+                <label><input type="checkbox" id="networking" name="interests" value="networking"> Networking</label>
+                <label><input type="checkbox" id="graphicDesign" name="interests" value="graphicDesign"> Graphic Design</label>
+            </div>
+        </div>
+        <div class="form-column">
+            <label>Sex:</label>
+            <div class="left-choices">
+                <label><input type="radio" id="male" name="sex" value="male"> Male</label>
+                <label><input type="radio" id="female" name="sex" value="female"> Female</label>
+            </div>
+        </div>
+    </div>
+
+    <button>Enroll now</button>
+</form>
+
+    <br><br><br><br>
+    <table class="table-container">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Jane Doe</td>
+                <td>janedoe@gmail.com</td>
+                <td>22</td>
+                <td>Female</td>
+                <td>BSPA</td>
+                <td>Web Development, Graphic Design</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Michael Johnson</td>
+                <td>michaeljohnson@gmail.com</td>
+                <td>21</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Networking, Data Science</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Emily Brown</td>
+                <td>emilybrown@gmail.com</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>BSSW</td>
+                <td>Web Development, Data Science</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>David Lee</td>
+                <td>davidlee@gmail.com</td>
+                <td>23</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Networking, Graphic Design</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Sarah Kim</td>
+                <td>sarahkim@gmail.com</td>
+                <td>22</td>
+                <td>Female</td>
+                <td>BSPA</td>
+                <td>Web Development, Data Science</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>John Smith</td>
+                <td>johnsmith@gmail.com</td>
+                <td>24</td>
+                <td>Male</td>
+                <td>BSAIS</td>
+                <td>Graphic Design</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Anna Taylor</td>
+                <td>annataylor@gmail.com</td>
+                <td>23</td>
+                <td>Female</td>
+                <td>BSPA</td>
+                <td>Networking, Web Development</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Chris Evans</td>
+                <td>chrisevans@gmail.com</td>
+                <td>21</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Data Science</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Laura Wilson</td>
+                <td>laurawilson@gmail.com</td>
+                <td>22</td>
+                <td>Female</td>
+                <td>BSSW</td>
+                <td>Web Development, Networking</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>James Carter</td>
+                <td>jamescarter@gmail.com</td>
+                <td>24</td>
+                <td>Male</td>
+                <td>BTvTED</td>
+                <td>Graphic Design, Data Science</td>
+              </tr>
+            </tbody>
+    </table>
+
+<style >.content-container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-image: url('image/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enrollment-container {
+    border: 2px solid;
+    align-items: center;
+    border-radius: 20px;
+    width: 450px;
+    height: 350px;
+    padding: 20px;
+    background-color: #b97373;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between columns */
+    width: 100%;
+}
+
+.form-column {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold;
+}
+.interests, .sex-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.interests label, .sex-options label {
+    display: flex;
+    align-items: center; /* Align text with the input */
+
+}
+.left_choices{
+    text-align: left;
+
+}
+
+button {
+    background-color: #5a5a5a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #444444;
+}
+.table-container{
+    align-items: center;
+    padding: 5px; 
+    width: 1500px; 
+    height: 300px;
+    font-size:15px; 
+    background-color: #b97373;
+    
+}
+body {
+    font-family: Arial, sans-serif;   
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: #f2f2f2;
+}
+h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #f2f2f2;
+}
+ol {
+    font-size: 20px;
+    text-align: center;
+    color: #f2f2f2;
+}
+li {
+    font-size: 20px;
+    text-align: left;
+    color: #f2f2f2;
+
+}
+
+
+th, td {
+    border: 2px solid;
+    padding: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+th {
+    background-color: #f2f2f2;  
+    font-size: 20px; 
+
+}
+</style>
+
+</body>
+</html>
